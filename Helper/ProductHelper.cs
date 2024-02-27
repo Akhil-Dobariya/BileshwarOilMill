@@ -1,9 +1,11 @@
 ﻿using BileshwarOilMill.Models;
+using System.Net;
 
 namespace BileshwarOilMill.Helper
 {
     public class ProductHelper
     {
+
         public static ProductDetailsModel GetProductDetails(int productId)
         {
             if (productId == 1)
@@ -14,7 +16,8 @@ namespace BileshwarOilMill.Helper
                     Description="100% Pure and Natural edible oil for daily use",
                     Id=productId,
                     Name="Peanut Oil",
-                    Price=2800
+                    Price=2800,
+                    ImageURL=$"/Images/OilCan.jpg"
                 };
             }
             else
@@ -25,7 +28,8 @@ namespace BileshwarOilMill.Helper
                     Description = "Default",
                     Id = productId,
                     Name = "Default",
-                    Price = 0
+                    Price = 0,
+                    ImageURL=""
                 };
             }
         }
