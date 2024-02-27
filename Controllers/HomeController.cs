@@ -1,4 +1,5 @@
-﻿using BileshwarOilMill.Models;
+﻿using BileshwarOilMill.Helper;
+using BileshwarOilMill.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -31,6 +32,12 @@ namespace BileshwarOilMill.Controllers
         public IActionResult About()
         {
             return View();
+        }
+        
+        public IActionResult Details(int productId)
+        {
+            ProductDetailsModel model = ProductHelper.GetProductDetails(productId);
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
