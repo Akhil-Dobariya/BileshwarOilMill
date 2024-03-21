@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "BileshwarOilMill20240226161634",
+      "defaultValue": "BileshwarOilMill",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }

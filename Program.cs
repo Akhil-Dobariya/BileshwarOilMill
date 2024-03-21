@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Rewrite;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -14,6 +16,9 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+
+app.UseRewriter();
 app.UseStaticFiles();
 
 app.UseRouting();
