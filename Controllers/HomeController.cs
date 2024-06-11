@@ -32,7 +32,7 @@ namespace BileshwarOilMill.Controllers
         public IActionResult About()
         {
             return View();
-        
+        }
         
         public IActionResult Details(int productId)
         {
