@@ -1,0 +1,15 @@
+name: TestTemp
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted  # Choose a runner with the appropriate OS
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4
+
+    - name: path
+      run: echo $GITHUB_PATH
