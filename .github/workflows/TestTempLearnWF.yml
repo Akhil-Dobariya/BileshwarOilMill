@@ -12,6 +12,6 @@ jobs:
       uses: actions/checkout@v4
 
     - name: path
-      run: echo " path :- ${{GITHUB_PATH}}"
+      run: echo " path :- ${{github.GITHUB_PATH}}"
     - name: workspace
       run: echo "current dir:- ${{ github.workspace }}"
